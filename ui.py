@@ -5,7 +5,7 @@ from delete_note import delete_note
 
 
 def start_menu():
-    print("Здравствуйте! Вы находитесь в приложении по управлению заметками!")
+    print("Привет! Вы находитесь в приложении по управлению заметками!")
     command = None
     while command != 5:
         command = int(
@@ -28,7 +28,7 @@ def start_menu():
             change_note()
         elif command == 4:
             delete_note()
-    print("Спасибо, что воспользовались нашими услугами\n" "Приходите к нам еще!")
+    print("Спасибо и пока!\n" "Приходите к нам еще!")
 
 
 def check_command_num(n):

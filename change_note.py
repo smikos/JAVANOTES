@@ -8,12 +8,12 @@ from get_file_lines import get_file_lines
 def change_note():
     file_path = check_file_exists()
     if file_path == None:
-        print("Сожалеем, но списка с заметками не существует!\n")
+        print("Такого списка с заметками нет!\n")
     else:
         with open("notes_file.txt", "r", encoding="utf-8") as file:
             lines_qty = len(file.readlines())
             if lines_qty == 0:
-                print("\nСожалеем, но в списке нет заметок.\n")
+                print("\nЗаметок нет.\n")
             else:
                 print_notes()
                 ID_to_change = input(
